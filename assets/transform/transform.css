@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 900px;
+  height: 500px;
+  margin: 20px auto;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+.main button:hover {
+  transition: 1s;
+}
+
+.main button:active {
+  animation-name: qaltirasin;
+  animation-duration: 0.01s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes qaltirasin {
+  50% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(120px);
+  }
+}
